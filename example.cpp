@@ -28,7 +28,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	x.setZero();
 
 	//Run LSQR
-	LSQR lsqr =	LSQR(Asp, b, x, 1.0e-8);
+	LSQR lsqr = LSQR(Asp, b, x, 1.0e-8);
 
 	x = lsqr.SolutionX();
 
