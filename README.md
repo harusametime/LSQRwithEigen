@@ -18,12 +18,12 @@ Source code of Eigen 3
   ```
     LSQR lsqr =	LSQR(A, b, x, 1.0e-8);
   ```
-  where A, b and x must be SparseMatrix<double>, VectorXd and VectorXd of Eigen. LSQR starts to solve the problem with regarding *x* as the initial solution. **So please note that *x* must be initialized**. If you can guess *x* by the other ways, you can input the guess to *x*. Otherwise, *x* is initialized as a zero vector in general.
+  where A, b and x must be SparseMatrix<double>, VectorXd and VectorXd of Eigen. LSQR starts to solve the problem using given *x* as the initial solution. **So please note that *x* must be initialized before solving**. If you can guess *x* by the other ways, you can input the guess to *x*. Otherwise, *x* is initialized as a zero vector in general.
   
 3. We can get the solution by LSQR with:
 
   ```
-    x =	lsqr.Solution();
+    x =	lsqr.SolutionX();
   ```
 
 
