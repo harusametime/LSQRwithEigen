@@ -1,4 +1,6 @@
+#include "stdafx.h"
 #include "LSQR.h"
+
 
 LSQR::LSQR(const Eigen::SparseMatrix<double> &A, const Eigen::VectorXd &b, const Eigen::VectorXd &x_ini, const double &eps)
 {

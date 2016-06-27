@@ -1,5 +1,5 @@
 #pragma once
-
+#include "stdafx.h"
 #include "./Eigen/Eigen/Dense"
 #include "./Eigen/Eigen/Sparse"
 #include <iostream>
