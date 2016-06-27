@@ -12,3 +12,18 @@ Source code of Eigen 3
 
 ## How to use it
 
+1. Put the source code of Eigen 3 in the directory where you put these source codes.
+2. In order to solve the linear system Ax =b, write the following code (See also *example.cpp*):
+
+  ```
+    LSQR lsqr =	LSQR(A, b, x, 1.0e-8);
+  ```
+  where A, b and x must be SparseMatrix<double>, VectorXd and VectorXd of Eigen.
+  
+3. We can get the solution by LSQR with:
+
+  ```
+    x =	lsqr.Solution();
+  ```
+
+
