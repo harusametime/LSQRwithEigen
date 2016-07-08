@@ -12,7 +12,7 @@ Source code of Eigen 3
 
 ## How to use it
 
-1. Put the source code of Eigen 3 to the same directory as *LSQR.cpp*, *LSQr.h*, and *example.cpp*.
+1. Put the source code of Eigen 3 to the same directory as *LSQR.cpp*, *LSQR.h*, and *example.cpp*.
 2. In order to solve the linear system Ax =b, write the following code (See also *example.cpp*):
 
   ```
